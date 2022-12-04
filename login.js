@@ -16,27 +16,37 @@
       const email = form.querySelector("input#email").value;
       const password = form.querySelector("input#password").value;
 
+      const reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+      
+
       console.log(nameEl);
       console.log(name);
       console.log(email);
       console.log(password);
-      if((name.length >= 1 && name.length <= 100) &&( password.length >= 7 && password.length <=25)){
+      
+      if((name.length >= 1 && name.length <= 100) &&( password.length >= 7 && password.length <=25) && (reg.test(email))){
         nameEl.style.backgroundColor="white";
+        emailEl.style.backgroundColor="white";
         passwordEl.style.backgroundColor="white";
         console.log("Git")
         return true;
       }else{
           if(name < 1 || name > 100){
-            nameEl.style.backgroundColor = "red";
+            nameEl.style.border = "solid #A61C2E";
           }else{
-            nameEl.style.backgroundColor="white";
+            nameEl.style.border = "grey";
           }
           if(password < 7 || password > 25){
-            passwordEl.style.backgroundColor = "red";
+            passwordEl.style.border = "solid #A61C2E";
           }else{
-            passwordEl.style.backgroundColor="white";
+            passwordEl.style.border = "grey";
           }
-         // nameEl.style.backgroundColor = "red";
+          if(!reg.test(email)){
+            emailEl.style.border = "solid #A61C2E";
+          }else{
+            emailEl.style.border = "grey";
+          }
+         
        alert("Złe dane");
        
           
