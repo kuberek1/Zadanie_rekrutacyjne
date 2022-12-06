@@ -135,3 +135,7 @@ button.addEventListener("click", function() {
 
 }); 
 ```
+### Uruchamianie projektu
+
+W konsoli należy wpisać polecenie `gulp watch` aby projekt został uruchomiony oraz wprowadzony w tryb oczekiwania na zmiany.
+
