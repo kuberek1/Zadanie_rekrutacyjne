@@ -1,18 +1,11 @@
 # Idee - Zadanie rekrutacyjne
 
 ## Wymagania:
-Breadcrumbs
-Formularz logowania
-    Username:
-        - Wymagane
-        - Max 100 znaków
-    Email Adress:
-        - Wymagane
-        - Poprawny email
-    Password:
-        - Wymagane
-        - Min 7 znaków
-        - Max 25 znaków
+* Breadcrumbs
+* Formularz logowania 
+    * Username: pole wymagane, max 100 znaków
+    * Email Adress: pole wymagane, poprawny email
+    * Password: pole wymagane, min 7 znaków, max 25 znaków
 
 ### Nagłówek:
 
